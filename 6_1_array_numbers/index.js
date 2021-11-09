@@ -27,7 +27,7 @@ const arr = [1,7,3,0,-5,7,3,9];
 })(arr);
 
 (function arrMulti(arr){
-    let mult = 0;
+    let mult = 1;
     for (let i = 0; i < arr.length; i++) {
         mult *= arr[i];
     }
