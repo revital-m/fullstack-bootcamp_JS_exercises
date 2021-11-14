@@ -1,14 +1,18 @@
-let myArrInput = ["boo", "doooo", "hoo","ro"];
+let populations = [9, 1441, 333, 46];
 
-function wordsLength(arr){
-    let myArrOutput = [];
+function populationPercentages(arr){
+    let percentages = [];
     let i = 0;
     while (i < arr.length) {
-        myArrOutput.push(arr[i].length);
+        percentages.push(percentageOfWorld2(arr[i]));
         i++;
     }
-    return myArrOutput;
+    return percentages;
 }
 
-let myArrOutput = wordsLength(myArrInput);
-console.log(myArrOutput);
+const percentageOfWorld2 = (population) => (
+    Math.round((((population/7900)*100) + Number.EPSILON) * 100) / 100
+);
+
+let percentages = populationPercentages(populations);
+console.log(percentages);
