@@ -25,19 +25,29 @@ function getPrice(candyStore, id) {
 }
 
 function addCandy(candyStore, id, name, price) {
-    candyStore.candies.push({
+    let candy = getCandy(candyStore, id);
+    if (candy) {
+      candy.amount++;
+    }
+    else {
+      candyStore.candies.push({
         name,
         id,  
         price,
         amount: 1,
-    }); 
+    });
+    }
 }
 
 function buy(candyStore, id) {
     let candy = getCandy(candyStore, id);
-    let price = getPrice(candyStore, id);
-    candy.amount--;
-    candyStore.cashRegister += price;
+    if (candy.amount > 0) {
+      candy.amount--;
+      candyStore.cashRegister += candy.price;
+    }
+    else {
+      return console.log('out of stock.');
+    }
 }
 
 
@@ -45,7 +55,9 @@ let idCandy = getCandy(candyStore, 'as12f');
 console.log(`idCandy = `,idCandy);
 let priceOfCandy = getPrice(candyStore, 'as12f');
 console.log(`priceOfCandy = `,priceOfCandy);
-let addingCandy = addCandy(candyStore, 'e1r4f', 'm&m',4);
+let addingCandy1 = addCandy(candyStore, 'as12f', 'mint gum',2);
+let addingCandy2 = addCandy(candyStore, 'e1r4f', 'm&m',4);
 console.log(`addingCandy = `,candyStore);
-let buyingCandy = buy(candyStore, 'e1r4f');
+let buyingCandy1 = buy(candyStore, 'e1r4f');
+let buyingCandy2 = buy(candyStore, 'e1r4f');
 console.log(`buyingCandy = `,candyStore);
