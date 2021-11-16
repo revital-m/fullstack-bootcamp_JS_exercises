@@ -6,5 +6,5 @@ let myMap = new Map([[myObj1,1], [myObj2,2], [myObj3,3]]);
 console.log(myMap);
 
 for (const el of myMap) {
-    console.log(el);
+    console.log(`name = ${el[0].name}`, `id = ${el[1]}`);
 }
