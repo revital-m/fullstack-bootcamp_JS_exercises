@@ -71,9 +71,8 @@ function funcD2() {
 funcD2();
 console.log(e);*/
 
-//* line 64 will be undefined.
-//* line 69 will be undefined.
-//* you can't access a local variable outside his block.
+//* line 64 will be 1. d is a global variable.
+//* line 69 will be undefined. you can't access a local variable outside his block.
 
 //? Block-6
 /*function funcE() {
