@@ -43,7 +43,7 @@ funcB();
 console.log(typeof a);
 console.log(typeof b);*/
 
-//* line 40 will be undefined. to fix it we need to declare let b before we give it's value to a.
+//* line 40 will be undefined. to fix it we need to declare let b before we give it's value to a. Because as it is written now, b is a global variable.
 //* line 41 will be number.
 
 //? Block-4
