@@ -3,7 +3,8 @@ myBody.style.display = 'flex';
 myBody.style.flexDirection = 'column';
 myBody.style.justifyContent = 'center';
 myBody.style.alignItems = 'center';
-myBody.style.backgroundColor = 'rgb(54, 0, 68)';
+myBody.style.backgroundColor = 'black';
+// myBody.style.backgroundColor = 'rgb(54, 0, 68)';
 
 const newH1 = document.createElement('h1');
 newH1.innerText = 'My New Website';
