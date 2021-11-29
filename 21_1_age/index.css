@@ -1,18 +1,19 @@
 body {
   display: flex;
   min-height: 90vh;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 button {
-  margin: 10px;
-  height: 40px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 20px;
+}
+
+.text i {
+  padding-left: 10px;
 }
