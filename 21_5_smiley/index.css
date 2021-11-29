@@ -1,0 +1,27 @@
+body {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.errMsg {
+  color: rgb(196, 3, 3);
+  visibility: hidden;
+}
+
+.smileys {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.smileys i {
+  font-size: 100px;
+  color: rgb(240, 196, 0);
+  margin: 5px;
+}
