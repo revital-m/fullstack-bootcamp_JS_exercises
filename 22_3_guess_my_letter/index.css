@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chosen-letter {
+  border: 1px solid black;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.msg {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.msg-green {
+  color: green;
+}
+
+.msg-red {
+  color: red;
+}
+
+.bottom-title {
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.keys-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneKey {
+  padding-left: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.display-none {
+  display: none;
+}
