@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid black;
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
