@@ -22,7 +22,7 @@ submitForm.addEventListener("submit", (event) => {
     userAge.innerText = `age: ${age.value}`;
     userEmail.innerText = `email: ${email.value}`;
   }
-
+let test;
   event.preventDefault();
 });
 
