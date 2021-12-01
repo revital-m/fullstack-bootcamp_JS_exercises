@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+th {
+  background: rgb(248, 174, 248);
+}
+
+td {
+  cursor: pointer;
+}
+
+td:hover {
+  background: rgb(132, 216, 255);
+  font-weight: bold;
+}
