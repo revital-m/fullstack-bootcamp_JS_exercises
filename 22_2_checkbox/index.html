@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>22.2-checkbox</title>
-</head>
-<body>
-        <input type="checkbox" name="myCheckBox" />
-        <img src="smiley.png" alt="" srcset="" />
-      </body>
-      <style>
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      </style>
-      <script>
-        const checkbox = document.querySelector("input");
-        const image = document.querySelector("img");
-        image.style.visibility = "hidden";
-        checkbox.addEventListener("change", (e) => {
-          if (checkbox.checked) {
-            image.style.visibility = "visible";
-          } else {
-            image.style.visibility = "hidden";
-          }
-        });
-      </script>
-     
-</body>
+  </head>
+  <body>
+    <input type="checkbox" name="myCheckBox" />
+    <img class="visibility-hidden" src="./img/imgbin_emoticon-smiley-ok-png.png" alt="smiley">
+  </body>
+  <script src="./index.js"></script>
 </html>
