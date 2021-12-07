@@ -10,22 +10,14 @@ function makeAllCaps(arr) {
   });
 }
 
-function sortWords(arr) {
-  return new Promise((resolve, reject) => {
-    resolve(arr.sort());
-  });
-}
+const sortWords = (arr) => arr.sort();
 
 const arr1 = ["hello", "world", "learning", "promise"];
 const arr2 = ["not", "all", "str", 10];
 
 makeAllCaps(arr1)
-  .then((data) => {
-    return sortWords(data);
-  })
-  .then((data) => {
-    console.log(data);
-  })
+  .then((data) => sortWords(data))
+  .then((data) => console.log(data))
   .catch((data) => {
     console.log(
       `the array: [${data}], includes at least one item that is not a string.`
