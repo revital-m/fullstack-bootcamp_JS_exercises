@@ -1,0 +1,103 @@
+body {
+  margin: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  background: rgba(230, 255, 249, 0.788);
+}
+
+.input {
+  margin: 1rem;
+}
+
+.inputText {
+  line-height: 1.6;
+}
+
+.btn {
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+#errMsg {
+  color: rgb(197, 0, 0);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hiddenText {
+  visibility: hidden;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+  background: rgba(204, 204, 204, 0.712);
+  max-width: 70vw;
+}
+
+.movie img {
+  width: 30%;
+}
+
+.movieInfo {
+  padding: 2rem;
+}
+
+.movieInfo h1 {
+  text-align: center;
+}
+
+.movieInfo ul {
+  list-style-type: none;
+}
+
+.movieInfo li {
+  display: flex;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.listKey {
+  font-weight: bold;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+.listValue {
+  margin: 0;
+}
+
+.ratings {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+.ratingsInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings img {
+  max-height: 11vh;
+  padding-right: 1rem;
+}
