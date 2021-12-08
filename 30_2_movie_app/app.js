@@ -12,6 +12,7 @@ searchBtn.addEventListener("click", (e) => {
   movieName = inputText.value;
   inputText.value = "";
   if (movieName !== "") {
+    moviesContainer.innerHTML = "";
     newMovie();
   }
 });
@@ -22,6 +23,7 @@ inputText.addEventListener("keypress", (e) => {
   movieName = inputText.value;
   if (e.key === "Enter" && movieName !== "") {
     inputText.value = "";
+    moviesContainer.innerHTML = "";
     newMovie();
   }
 });
