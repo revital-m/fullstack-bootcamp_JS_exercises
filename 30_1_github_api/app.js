@@ -6,6 +6,10 @@ const errText = document.querySelector("#errMsg");
 
 const usersArr = [];
 
+window.addEventListener('load', () => {
+    inputText.focus();
+});
+
 searchBtn.addEventListener("click", (e) => {
     userInput = inputText.value;
     inputText.value = "";
